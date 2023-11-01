@@ -1,0 +1,176 @@
+/************************ Styling For Demo ************************/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #a2612f;
+}
+
+body > .container {
+  margin-top: 140px;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background: #fcfcfc00;
+  color: #fff;
+  position: fixed;
+  z-index: 1990;
+  top: 0;
+}
+
+.navbar > .container {
+  position: relative;
+}
+
+.navbar > .container .navbar-brand {
+  padding-bottom: 29px;
+}
+
+.navbar > .container .navbar-nav {
+  position: absolute;
+  right: 0;
+}
+
+.navbar > .container .navbar-nav li a {
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 0 8px;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar > .container .navbar-nav li a:hover, .navbar > .container .navbar-nav li a.active {
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.navbar > .container a {
+  color: #fff;
+}
+
+.navbar > .container .title {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 11px;
+}
+
+.navbar > .container .title .h-bigger {
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.navbar > .container .title + p {
+  font-size: .56em;
+  letter-spacing: 1px;
+  line-height: 0;
+  margin: -16px 0 0 2px;
+}
+
+.navbar > .container .navbar-collapse.collapsing {
+  height: unset !important;
+  /* prevents the "jump" effect of navbar content on toggle */
+}
+
+.navbar > .container .navbar-collapse.show {
+  z-index: 1990;
+}
+
+.navbar > .container .navbar-collapse.show .navbar-nav {
+  margin-top: 17px;
+  right: 4px;
+}
+
+.navbar > .container .navbar-collapse.show .navbar-nav .nav-item a {
+  width: 40px;
+  background: #026088;
+  text-align: center;
+  border-radius: 0;
+  padding: 3px 0;
+  display: block;
+}
+
+.navbar > .container .navbar-collapse.show .navbar-nav .nav-item a.active {
+  background: #3390B8;
+}
+
+.navbar > .container .navbar-collapse.show .navbar-nav .nav-item a.active:hover {
+  background: #3390B8;
+}
+
+.navbar > .container .navbar-collapse.show .navbar-nav .nav-item a:hover {
+  background: #297a9c;
+}
+
+.navbar > .container .navbar-collapse.show .navbar-nav .nav-item:last-child a {
+  border-radius: 0 0 5px 5px;
+}
+
+.navbar > .container .navbar-toggler {
+  color: #fff;
+  outline: none;
+}
+
+/************************ Pricing Tables ************************/
+.pricing-row.demo {
+  padding-top: 160px;
+}
+
+.pricing-row.demo::before {
+  width: 100%;
+  height: 1px;
+  background: rgba(162, 97, 47, 0.2);
+  content: "";
+  margin-top: -80px;
+}
+
+.pricing-row.demo:first-child {
+  padding-top: 130px;
+}
+
+.pricing-row.demo h5.style-no {
+  letter-spacing: 9px;
+  display: inline-block;
+  padding-top: 7px;
+}
+
+.pricing-row.demo > .col-sm-12 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.pricing-row.demo > .col-sm-12 .badge-secondary {
+  background: #a2612f;
+  font-size: 230%;
+  padding: 2px 7px 4px;
+  margin-left: 7px;
+}
+
+.pricing-row.demo .pricing {
+  margin-bottom: 30px;
+  /* for demo purposes, like all stylings in this css file */
+}
+
+.pricing-row.demo#style-1 {
+  margin-top: -110px;
+  /* for demo purposes, like all stylings in this css file */
+}
+
+.pricing-row.demo#style-17 > .col-sm-12 {
+  margin-bottom: 78px;
+}
+
+.pricing-row.demo#style-20 {
+  margin-bottom: 80px;
+}
+
+/************************ Responsive Fixes For Demo ************************/
+@media (max-width: 930px) and (min-width: 576px) {
+  .navbar-nav > :nth-child(even) {
+    display: none;
+  }
+}
